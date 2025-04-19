@@ -99,19 +99,19 @@ interface FeatureCardProps {
 function FeatureCard({ icon, iconBg, borderColor, title, subtitle, description, learnMoreColor }: FeatureCardProps) {
   return (
     <div className={`bg-white rounded-lg shadow-sm border-t-4 ${borderColor} flex flex-col h-full`}>
-      <div className="p-6 flex flex-col h-full">
-        <div className={`${iconBg} w-12 h-12 rounded-full flex items-center justify-center mb-4`}>{icon}</div>
+      <div className="p-4 flex flex-col h-full">
+        <div className={`${iconBg} w-10 h-10 rounded-full flex items-center justify-center mb-3`}>{icon}</div>
 
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-gray-600 mb-4">{subtitle}</p>
+        <h3 className="text-lg font-bold mb-1">{title}</h3>
+        <p className="text-gray-600 text-sm mb-3">{subtitle}</p>
 
-        <p className="text-gray-700 mb-6 flex-grow">{description}</p>
+        <p className="text-gray-700 text-sm mb-4 flex-grow">{description}</p>
 
         <Link
           href="#"
-          className={`group inline-flex items-center ${learnMoreColor} font-medium transition-colors hover:underline`}
+          className={`inline-flex items-center ${learnMoreColor} text-sm font-medium transition-colors hover:underline`}
         >
-          Learn more
+          Learn more{" "}
           <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
         </Link>
       </div>

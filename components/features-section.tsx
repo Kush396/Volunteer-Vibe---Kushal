@@ -98,7 +98,9 @@ interface FeatureCardProps {
 
 function FeatureCard({ icon, iconBg, borderColor, title, subtitle, description, learnMoreColor }: FeatureCardProps) {
   return (
-    <div className={`bg-white rounded-lg shadow-sm border-t-4 ${borderColor} flex flex-col h-full`}>
+    <div
+      className={`bg-white rounded-lg shadow-md border border-gray-200 border-t-4 ${borderColor} flex flex-col h-full`}
+    >
       <div className="p-4 flex flex-col h-full">
         <div className={`${iconBg} w-10 h-10 rounded-full flex items-center justify-center mb-3`}>{icon}</div>
 
